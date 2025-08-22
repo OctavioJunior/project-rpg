@@ -6,9 +6,9 @@ import org.rpg.project.model.heroes.Hero;
 import org.rpg.project.model.heroes.classes.Archer;
 import org.rpg.project.model.heroes.classes.Mage;
 import org.rpg.project.model.heroes.classes.Warrior;
-import org.rpg.project.enums.AbilityType;
-import org.rpg.project.enums.MagicType;
-import org.rpg.project.enums.ItemType;
+import org.rpg.project.core.enums.AbilityType;
+import org.rpg.project.core.enums.MagicType;
+import org.rpg.project.core.enums.ItemType;
 
 import java.util.Arrays;
 import java.util.List;

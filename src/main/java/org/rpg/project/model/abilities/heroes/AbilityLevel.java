@@ -1,7 +1,7 @@
 package org.rpg.project.model.abilities.heroes;
 
-import org.rpg.project.enums.AbilityType;
-import org.rpg.project.interfaces.Ability;
+import org.rpg.project.core.enums.AbilityType;
+import org.rpg.project.core.interfaces.Ability;
 
 public class AbilityLevel implements Ability {
     private final String name;

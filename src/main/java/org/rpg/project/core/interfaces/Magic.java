@@ -1,6 +1,6 @@
-package org.rpg.project.interfaces;
+package org.rpg.project.core.interfaces;
 
-import org.rpg.project.enums.MagicType;
+import org.rpg.project.core.enums.MagicType;
 
 public interface Magic {
     String getName();

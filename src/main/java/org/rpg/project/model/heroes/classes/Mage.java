@@ -1,8 +1,8 @@
 package org.rpg.project.model.heroes.classes;
 
 import org.rpg.project.model.heroes.Hero;
-import org.rpg.project.enums.MagicType;
-import org.rpg.project.interfaces.Magic;
+import org.rpg.project.core.enums.MagicType;
+import org.rpg.project.core.interfaces.Magic;
 import org.rpg.project.model.itens.Inventory;
 
 import java.util.ArrayList;

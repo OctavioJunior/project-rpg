@@ -1,6 +1,6 @@
 package org.rpg.project.model.itens;
 
-import org.rpg.project.enums.ItemType;
+import org.rpg.project.core.enums.ItemType;
 
 import java.util.ArrayList;
 import java.util.List;

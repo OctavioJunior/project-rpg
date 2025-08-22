@@ -1,4 +1,4 @@
-package org.rpg.project.enums;
+package org.rpg.project.core.enums;
 
 public enum ItemType {
     POTION_HEALTH("Poção de Vida", 5),

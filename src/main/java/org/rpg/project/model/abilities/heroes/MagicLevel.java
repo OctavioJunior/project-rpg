@@ -1,7 +1,7 @@
 package org.rpg.project.model.abilities.heroes;
 
-import org.rpg.project.enums.MagicType;
-import org.rpg.project.interfaces.Magic;
+import org.rpg.project.core.enums.MagicType;
+import org.rpg.project.core.interfaces.Magic;
 
 public class MagicLevel implements Magic {
     private final String name;

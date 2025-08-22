@@ -1,8 +1,8 @@
 package org.rpg.project.model.heroes.classes;
 
 import org.rpg.project.model.heroes.Hero;
-import org.rpg.project.enums.AbilityType;
-import org.rpg.project.interfaces.Ability;
+import org.rpg.project.core.enums.AbilityType;
+import org.rpg.project.core.interfaces.Ability;
 import org.rpg.project.model.itens.Inventory;
 
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package org.rpg.project.enums;
+package org.rpg.project.core.enums;
 
 import org.rpg.project.model.abilities.heroes.AbilityLevel;
 

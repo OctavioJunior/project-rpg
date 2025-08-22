@@ -1,6 +1,6 @@
 package org.rpg.project.model.itens;
 
-import org.rpg.project.enums.ItemType;
+import org.rpg.project.core.enums.ItemType;
 
 public class ItemStack {
     private final ItemType type;
