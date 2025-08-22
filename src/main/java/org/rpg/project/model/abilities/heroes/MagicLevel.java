@@ -1,4 +1,4 @@
-package org.rpg.project.abilities.heroes;
+package org.rpg.project.model.abilities.heroes;
 
 import org.rpg.project.enums.MagicType;
 import org.rpg.project.interfaces.Magic;
@@ -34,5 +34,26 @@ public class MagicLevel implements Magic {
     @Override
     public int getManaCost() {
         return manaCost;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        MagicLevel that = (MagicLevel) obj;
+        return level == that.level && 
+               manaCost == that.manaCost && 
+               name.equals(that.name) && 
+               magicType == that.magicType;
+    }
+
+    @Override
+    public int hashCode() {
+        return java.util.Objects.hash(name, level, magicType, manaCost);
+    }
+
+    @Override
+    public String toString() {
+        return name + " (Nível " + level + ", " + magicType + ", Custo: " + manaCost + " mana)";
     }
 }

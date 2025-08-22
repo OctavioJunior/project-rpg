@@ -1,9 +1,9 @@
-package org.rpg.project.characters.heroes.classes;
+package org.rpg.project.model.heroes.classes;
 
-import org.rpg.project.characters.heroes.Hero;
+import org.rpg.project.model.heroes.Hero;
 import org.rpg.project.enums.AbilityType;
 import org.rpg.project.interfaces.Ability;
-import org.rpg.project.itens.Inventory;
+import org.rpg.project.model.itens.Inventory;
 
 import java.util.ArrayList;
 import java.util.HashSet;

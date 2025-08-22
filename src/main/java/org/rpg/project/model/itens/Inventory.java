@@ -1,4 +1,4 @@
-package org.rpg.project.itens;
+package org.rpg.project.model.itens;
 
 import org.rpg.project.enums.ItemType;
 
@@ -17,16 +17,26 @@ public class Inventory {
     public boolean addItem(ItemType type, int quantity) {
         for (ItemStack stack : items) {
             if (stack.getType() == type) {
+                int oldQuantity = stack.getQuantity();
                 stack.addQuantity(quantity);
+                int newQuantity = stack.getQuantity();
+                
+                if (newQuantity < oldQuantity + quantity) {
+                    System.out.println("⚠️ Não foi possível adicionar todos os itens. Limite máximo de " + type.getName() + " atingido (" + type.getMaxQuantity() + ").");
+                }
                 return true;
             }
         }
 
         if (items.size() < maxSlots) {
             items.add(new ItemStack(type, quantity));
+            if (quantity > type.getMaxQuantity()) {
+                System.out.println("⚠️ Não foi possível adicionar todos os itens. Limite máximo de " + type.getName() + " atingido (" + type.getMaxQuantity() + ").");
+            }
             return true;
         }
 
+        System.out.println("❌ Inventário cheio! Não há mais espaço para adicionar " + type.getName() + ". Slots disponíveis: 0/" + maxSlots);
         return false;
     }
 

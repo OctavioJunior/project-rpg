@@ -1,6 +1,6 @@
-package org.rpg.project.characters.heroes;
+package org.rpg.project.model.heroes;
 
-import org.rpg.project.itens.Inventory;
+import org.rpg.project.model.itens.Inventory;
 
 public class Hero {
     protected String name;
@@ -22,5 +22,26 @@ public class Hero {
 
     public Inventory getInventory() {
         return inventory;
+    }
+    
+    // Getters públicos para acesso aos campos
+    public String getName() {
+        return name;
+    }
+    
+    public String getGuild() {
+        return guild;
+    }
+    
+    public int getLevel() {
+        return level;
+    }
+    
+    public int getHealth() {
+        return health;
+    }
+    
+    public int getXp() {
+        return xp;
     }
 }

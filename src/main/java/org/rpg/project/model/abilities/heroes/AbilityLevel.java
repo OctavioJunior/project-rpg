@@ -1,4 +1,4 @@
-package org.rpg.project.abilities.heroes;
+package org.rpg.project.model.abilities.heroes;
 
 import org.rpg.project.enums.AbilityType;
 import org.rpg.project.interfaces.Ability;
@@ -34,5 +34,26 @@ public class AbilityLevel implements Ability {
     @Override
     public int getEnergyCost() {
         return energyCost;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        AbilityLevel that = (AbilityLevel) obj;
+        return level == that.level && 
+               energyCost == that.energyCost && 
+               name.equals(that.name) && 
+               abilityType == that.abilityType;
+    }
+
+    @Override
+    public int hashCode() {
+        return java.util.Objects.hash(name, level, abilityType, energyCost);
+    }
+
+    @Override
+    public String toString() {
+        return name + " (Nível " + level + ", " + abilityType + ", Custo: " + energyCost + " energia)";
     }
 }

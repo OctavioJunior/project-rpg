@@ -1,4 +1,4 @@
-package org.rpg.project.characters.enemies;
+package org.rpg.project.model.enemies;
 
 public class Enemy {
     protected int level;

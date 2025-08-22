@@ -1,4 +1,4 @@
-package org.rpg.project.itens;
+package org.rpg.project.model.itens;
 
 import org.rpg.project.enums.ItemType;
 

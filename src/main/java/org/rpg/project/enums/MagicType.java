@@ -1,6 +1,6 @@
 package org.rpg.project.enums;
 
-import org.rpg.project.abilities.heroes.MagicLevel;
+import org.rpg.project.model.abilities.heroes.MagicLevel;
 
 import java.util.List;
 
